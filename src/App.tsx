@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { ButtonSize, ButtonType } from "./components/Button/button"
+import Button from "./components/Button/button"
+import Menu from "./components/Menu/menu"
+import MenuItem from "./components/Menu/menuitem"
+import SubMenu from "./components/Menu/subMenu"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu onSelect={(e)=>{alert(e)}}mode="vertical">
+      <MenuItem >
+          cool link
+        </MenuItem> 
+        <MenuItem  disabled>
+          cool link 2
+        </MenuItem>
+          <SubMenu title="dropdown">
+            <MenuItem>dropdown1</MenuItem>
+            <MenuItem>dropdown2</MenuItem>
+          </SubMenu>
+        <MenuItem >
+          cool link 3
+        </MenuItem>
+      </Menu>
+  <hr />
+   <h1>hello word</h1>
+   <h2>hello word</h2>
+   <h3>helloword</h3>
+   <Button children={"heoloo"} btnType={ButtonType.Primary} onClick={(e)=> {console.log(e);
+   }}
+   className="sssss"
+   />
+   <Button btnType={ButtonType.Link} target="_blank" size={ButtonSize.Large} href="www.baidu.com" children={"heoloo"}/>
+   <Button btnType={ButtonType.Danger}  size={ButtonSize.Large} disable={true}>hello</Button>
+   <Button btnType={ButtonType.Default} size={ButtonSize.Small} disable={true}>hello</Button>
     </div>
   );
 }
