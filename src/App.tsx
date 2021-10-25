@@ -6,7 +6,7 @@ import SubMenu from "./components/Menu/subMenu"
 function App() {
   return (
     <div className="App">
-      <Menu onSelect={(e)=>{alert(e)}}mode="vertical">
+      <Menu defaultIndex="0" onSelect={(e)=>{alert(e)}}mode="vertical" defaultOpenSubMenus={["2"]}>
       <MenuItem >
           cool link
         </MenuItem> 
