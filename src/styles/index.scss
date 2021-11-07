@@ -8,7 +8,7 @@
 @import "mixin";
 
 // // animation
-// @import "animation";
+@import "animation";
 // // button
 
 @import "../components/Button/style";
@@ -18,16 +18,16 @@
 @import "../components/Menu/style";
 
 // // icon
-// @import "../components/Icon/style";
+@import "../components/Icond/style";
 
 // //input
-// @import "../components/Input/style";
+@import "../components/Input/style";
 
 // //auto-complete
-// @import "../components/AutoComplete/style";
+@import "../components/AutoComplete/style";
 
 // //upload
-// @import "../components/Upload/style";
+@import "../components/Upload/style";
 
 // //progress
-// @import "../components/Progress/style";
+@import "../components/Progress/style";

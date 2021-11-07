@@ -50,10 +50,12 @@
         }
       }
       .hsueh-submenu {
-        display: none;
+        // opacity: 0;
+        // display: none;
         list-style:none;
         padding-left: 0;
         white-space: nowrap;
+        // transition: opacity .5s ease-in;
         //transition: $menu-transition;
         .menu-item {
           padding: $menu-item-padding-y $menu-item-padding-x;
@@ -66,7 +68,8 @@
         }
       }
       .hsueh-submenu.menu-opened {
-        display: block;
+        // display: block;
+        // opacity: 1;
       }
 }
 .menu-horizontal {
